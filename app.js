@@ -1,6 +1,6 @@
 var serialport = require('serialport'),
 	SerialPort = serialport.SerialPort,
-	comport = process.argv [3] | '/dev/ttyACM0';
+	comport = process.argv [3] || '/dev/ttyACM0';
 
 var serialPort = new SerialPort(comport, {
 	baudrate: 9600,
