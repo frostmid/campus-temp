@@ -1,0 +1,10 @@
+{
+  "name": "campus-client",
+  "description": "temperature client",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "serialport": "*",
+    "socket.io-client": "*"
+  }
+}
