@@ -20,7 +20,7 @@ serialPort.open(function () {
 
 		serialPort.on('data', function (temp) {
 			socket.emit('data', {
-				point: [(new Date()).getTime(), parseInt(temp*100)],
+				point: [(new Date()).getTime(), parseFloat(temp)],
 				secret: privateSecret
 			});
 		});
